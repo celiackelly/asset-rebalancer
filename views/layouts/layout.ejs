@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta description="A simple tool for rebalancing your assets">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> <%= title %> </title>
+        <!--Normalize-->
+        <link rel="stylesheet" href="/css/normalize.css">
+        <!--Main Stylesheet-->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <main>
+            <%- include('../partials/errorMessage.ejs') %>
+            <%- body %>
+        </main>    
+        <%- include('../partials/footer.ejs') %>
+    </body>
+</html>

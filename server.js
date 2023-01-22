@@ -3,16 +3,17 @@ const app = express()
 import * as dotenv from 'dotenv' 
 dotenv.config({path: './config/.env'})
 const PORT = process.env.PORT
+
 import mongoose from 'mongoose'
+import connectDB from './config/database.js'
 import passport from 'passport'
 import MongoStore from 'connect-mongo';
 import session from 'express-session';
-// const MongoStore = new connectMongo(session);
+
 import methodOverride from 'method-override'
 import expressLayouts from 'express-ejs-layouts'
 import flash from 'express-flash'
 import logger from 'morgan'
-import connectDB from './config/database.js'
 
 // Passport config
 import passportConfig from './config/passport.js'

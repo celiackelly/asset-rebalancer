@@ -1,13 +1,13 @@
 import express from 'express'
 const router = express.Router()
-// const homeController = require('../controllers/home')
+import homeController from '../controllers/home.js'
 // const authController = require('../controllers/auth')
 // const passport = require('passport')
 // const { ensureAuth } = require('../middleware/auth')
 // const { ensureGuest } = require('../middleware/auth')
 
-// //GET home page (index.ejs)
-// router.get('/', homeController.getIndex)
+//GET home page (index.ejs)
+router.get('/', homeController.getIndex)
 
 // //GET About page 
 // router.get('/about', homeController.getAbout)
